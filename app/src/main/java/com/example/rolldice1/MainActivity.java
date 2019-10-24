@@ -17,7 +17,7 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-
+int count = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,10 +64,13 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(Integer.toString(number));
 
         EditText name = this.findViewById(R.id.editText);
+        EditText p = this.findViewById(R.id.textView3);
+        p.setText(Integer.toString(count));
         String name1 = name.getText().toString();
         int x = Integer.parseInt(name1);
         if (x == number) {
             tv1.setText("Congratulations");
+            count++;
         }
     }
 }
