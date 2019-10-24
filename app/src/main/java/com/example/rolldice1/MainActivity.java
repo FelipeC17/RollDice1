@@ -64,7 +64,7 @@ int count = 0;
         tv.setText(Integer.toString(number));
 
         EditText name = this.findViewById(R.id.editText);
-        EditText p = this.findViewById(R.id.textView3);
+        TextView p = this.findViewById(R.id.textView3);
         p.setText(Integer.toString(count));
         String name1 = name.getText().toString();
         int x = Integer.parseInt(name1);
