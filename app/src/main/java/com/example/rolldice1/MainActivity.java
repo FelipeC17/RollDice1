@@ -72,5 +72,33 @@ int count = 0;
             tv1.setText("Congratulations");
             count++;
         }
+
+
     }
+    public void roll_the_dice (View view) {
+        TextView tv = this.findViewById(R.id.textView);
+        TextView q = this.findViewById(R.id.textView4);
+        Random r = new Random();
+        int number = r.nextInt(6);
+        tv.setText(Integer.toString(number));
+        if (number == 1) {
+        q.setText("If you could go anywhere in the world, where would you go?");
+        }
+        if (number == 2) {
+            q.setText("If you were stranded on a desert island, what three things would you want to take with you?");
+        }
+        if (number == 3) {
+            q.setText("If you could eat only one food for the rest of your life, what would that be?");
+        }
+        if (number == 4) {
+            q.setText("If you won a million dollars, what is the first thing you would buy?");
+        }
+        if (number == 5) {
+            q.setText("If you could spend the day with one fictional character, who would it be?");
+        }
+        if (number == 6) {
+            q.setText("If you found a magic lantern and a genie gave you three wishes, what would you wish?");
+        }
+    }
+
 }
